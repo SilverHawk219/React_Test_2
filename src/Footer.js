@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const Footer = counter => {
+const Footer = () => {
   return (
     <div>
       <footer className="footer">

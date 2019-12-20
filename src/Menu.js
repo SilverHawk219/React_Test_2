@@ -9,7 +9,7 @@ const Menu = () => {
         <ul className="menu-list">
           <li>
             <NavLink to={"/Page1"} activeClassName="is-active">
-              Page1
+              Page1(table)
             </NavLink>
           </li>
           <li>

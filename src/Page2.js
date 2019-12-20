@@ -4,29 +4,8 @@ import { GlobalContext } from "./GlobalContext";
 const Page2 = () => {
   return (
     <>
+      <br />
       <p>Page 2 Content</p>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
     </>
   );
 };

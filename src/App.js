@@ -1,7 +1,9 @@
-import React, { useState, useEffect, useMemo } from "react";
+import React from "react";
 import Menu from "./Menu";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import Page1 from "./Page1";
+import Page2 from "./Page2";
 import DefaultPage from "./DefaultPage";
 import {
   BrowserRouter as Router,
@@ -22,7 +24,11 @@ const App = () => {
             <Menu />
           </div>
           <div class="collum">
-            <DefaultPage />
+            <Switch>
+              <Route path="/" exact component={DefaultPage} />
+              <Route path="/Page1" exact component={Page1} />
+              <Route path="/Page2" exact component={Page2} />
+            </Switch>
           </div>
         </div>
         <Footer />

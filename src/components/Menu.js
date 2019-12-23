@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useContext } from "react";
 import { NavLink } from "react-router-dom";
 import axios from "./axios";
-import { GlobalContext } from "./GlobalContext";
+import { GlobalContext } from "../GlobalContext";
 
 const Menu = () => {
   //const [global, setGlobal] = useContext(GlobalContext);

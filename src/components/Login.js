@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useContext } from "react";
 import axios from "./axios";
-import { GlobalContext } from "./GlobalContext";
+import { GlobalContext } from "../GlobalContext";
 const Login = () => {
   //const [global, setGlobal] = useContext(GlobalContext);
 

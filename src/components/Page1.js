@@ -1,5 +1,5 @@
 import React from "react";
-import { GlobalContext } from "./GlobalContext";
+import { GlobalContext } from "../GlobalContext";
 import { NavLink } from "react-router-dom";
 
 const Page1 = () => {

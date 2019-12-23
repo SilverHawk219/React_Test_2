@@ -4,7 +4,7 @@ import axios from "./axios";
 import { GlobalContext } from "../GlobalContext";
 
 const Menu = () => {
-  const [global, setGlobal] = useContext(GlobalContext);
+  //const [global, setGlobal] = useContext(GlobalContext);
 
   const logout = () => {
     setGlobal({});

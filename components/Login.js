@@ -2,12 +2,14 @@ import React, { useState, useEffect, useContext } from "react";
 import axios from "./axios";
 import { GlobalContext } from "../GlobalContext";
 const Login = () => {
-  const [global, setGlobal] = useContext(GlobalContext);
+  //const [global, setGlobal] = useContext(GlobalContext);
 
   const [pwd, setPwd] = useState("");
   const [usr, setUsr] = useState("");
   const [loading, setLoading] = useState(false);
-
+  const magentaStyle = {
+    background: "#e20074"
+  };
   const magentaStyleButton = {
     background: "#e20074",
     width: "70px"

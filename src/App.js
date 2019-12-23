@@ -4,6 +4,7 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 import Page1 from "./Page1";
 import Page2 from "./Page2";
+import Login from "./Login";
 import DefaultPage from "./DefaultPage";
 import {
   BrowserRouter as Router,
@@ -28,6 +29,7 @@ const App = () => {
               <Route path="/" exact component={DefaultPage} />
               <Route path="/Page1" exact component={Page1} />
               <Route path="/Page2" exact component={Page2} />
+              <Route path="/Login" exact component={Login} />
             </Switch>
           </div>
         </div>

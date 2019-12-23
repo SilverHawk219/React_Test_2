@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import Menu from "./Menu";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
@@ -16,6 +16,7 @@ import {
 import { GlobalContext } from "./GlobalContext";
 
 const App = () => {
+  const [global, setGlobal] = useState({});
   return (
     <>
       <Router>
@@ -26,7 +27,8 @@ const App = () => {
           </div>
           <div class="collum">
             <Switch>
-              <Route path="/" exact component={DefaultPage} />
+              <Route path="/" exact component={Login} />
+              <Route path="/DefaultPage" exact component={DefaultPage} />
               <Route path="/Page1" exact component={Page1} />
               <Route path="/Page2" exact component={Page2} />
               <Route path="/Login" exact component={Login} />

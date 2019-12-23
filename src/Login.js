@@ -15,6 +15,35 @@ const Login = () => {
     width: "70px"
   };
 
+  const login = () => {
+    const fetchData = async () => {
+      try {
+        setLoading(true);
+        const url = "http://localhost:8200/api/token/";
+        const data = {
+          username: usr,
+          password: pwd
+        };
+        const r = await axios.post(url, data);
+        console.log(r.data[0]);
+        if (!r.data) throw "no data received";
+        setGlobal({
+          ...global,
+          logged: true,
+          token: r.data.access,
+          user: usr
+        });
+      } catch (e) {
+        setUsr("");
+        setPwd("");
+        setLoading(false);
+        alert("Wrong Password");
+      }
+    };
+
+    fetchData();
+  };
+
   const onChange = e => {
     if (e.target.name === "usr") {
       setUsr(e.target.value);

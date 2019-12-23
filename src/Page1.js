@@ -17,7 +17,7 @@ const Page1 = () => {
         <tbody>
           <tr>
             <td>
-              <NavLink to={"/"} activeClassName="is-active">
+              <NavLink to={"/DefaultPage"} activeClassName="is-active">
                 11
               </NavLink>
             </td>

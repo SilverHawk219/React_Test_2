@@ -18,9 +18,6 @@ const Navbar = () => {
         <img src={logo} width="112" height="28" />
         <p className="navbar-item title">React Test Website</p>
       </div>
-      <div classname="navbar-end">
-        <p>User:{global.user}</p>
-      </div>
     </nav>
   );
 };

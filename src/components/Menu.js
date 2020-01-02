@@ -31,6 +31,7 @@ const Menu = () => {
               Login
             </NavLink>
           </li>
+          <li>User:{global.user}</li>
           <li>
             <button class="button" onClick={logout}>
               Logout

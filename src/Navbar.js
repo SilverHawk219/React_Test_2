@@ -1,6 +1,6 @@
 import logo from "../logo.png";
 import React from "react";
-import { GlobalContext } from "../GlobalContext";
+import { GlobalContext } from "./GlobalContext";
 
 const Navbar = () => {
   const magenta = {

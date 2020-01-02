@@ -1,11 +1,11 @@
 import React, { useState, useEffect, useMemo } from "react";
-import Menu from "./Menu";
-import Navbar from "./Navbar";
-import Footer from "./Footer";
-import Page1 from "./Page1";
-import Page2 from "./Page2";
-import Login from "./Login";
-import DefaultPage from "./DefaultPage";
+import Menu from "./components/Menu";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import Page1 from "./components/Page1";
+import Page2 from "./components/Page2";
+import Login from "./components/Login";
+import DefaultPage from "./components/DefaultPage";
 import {
   BrowserRouter as Router,
   Redirect,

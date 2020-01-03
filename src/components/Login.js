@@ -97,7 +97,7 @@ const Login = () => {
           <p className="control">
             <input
               className="input button is-danger"
-              //onClick={login}
+              onClick={login}
               type="submit"
               name="submit"
               style={magentaStyleButton}
